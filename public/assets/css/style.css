@@ -1,0 +1,55 @@
+body{
+	background-color: #FFD29B;
+}
+.two{
+	padding-top: 25px;
+}
+.list-group-item{
+	padding: 0px;
+	background-color: #FFD29B;
+	border-style: none;
+}
+.page-header{
+	border-style: none;
+	margin: 0px 0 0px;
+}
+#burger-pic{
+	height: 150px;
+}
+#burger{
+	height: 35px;
+	border-radius: 2px;
+	width: 225px;
+}
+.btn{
+	height: 35px;
+	background-color: #4890B2;
+	border-radius: 3px;
+}
+.instructions{
+	font-size: 16px;
+}
+.burgertext{
+	font-size: 16px;
+	padding-right: 15px;
+}
+.heading{
+	color: #4890B2;
+	font-size: 40px;
+	font-weight: bold;
+}
+.burglist{
+	font-size: 18px;
+	font-weight: bold;
+}
+hr{
+	margin-top: 0px;
+	border-color: #4890B2;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}

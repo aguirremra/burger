@@ -1,0 +1,48 @@
+<div class="page-header text-center">
+  <h2 class="heading">Eat Da Burger!</h2>
+  <img id="burger-pic" class="img-resppnsive" src="/assets/images/burger.png">
+</div>
+<div class="container">
+  <div class="row one">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <p class="burglist">Burgers to Devour!</p>
+      <hr>
+        {{#each burgers}}
+          {{#unless devoured}}
+<!--         <div>{{burger_name}}</div> -->
+        <li class="list-group-item burger-item">
+          <span class="burgertext" >{{burger_name}}</span>
+<!--         <input type="text" class="edit" style="display: none;"> -->
+        <button id="devour" class= "btn btn-default btndevour" data-id="{{id}}">Devour It</button>
+        </li>
+        <br>
+          {{/unless}}
+        {{/each}}
+    </div>
+    <div class="col-sm-4">
+      <p class="burglist">Burgers Devoured!</p>
+      <hr>
+        {{#each burgers}}
+          {{#if devoured}}
+<!--         <div>{{burger_name}}</div> -->
+        <li class="list-group-item burger-item">
+          <span class="burgertext" >{{burger_name}}</span>
+        </li>
+        <br>
+          {{/if}}
+        {{/each}}
+    </div>
+    <div class="col-sm-2"></div>    
+  </div>
+  <div class="row two text-center">
+    <div class="col-sm-12">    
+      <form action="">
+        <input placeholder="Enter a burger" id="burger" type="text" name="burger" required>
+        <input id="saveburger" class="btn btn-default" type="submit" value="Save Burger">
+      </form>
+      <br>    
+      <p id="instructions">Enter a burger name and click the submit button!</p>
+    </div>
+  </div>
+</div>
